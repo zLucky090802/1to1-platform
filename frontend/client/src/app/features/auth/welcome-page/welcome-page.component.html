@@ -1,28 +1,19 @@
 
 <div class="safe-area">
 
-    <img src="registeranimation.jpg" alt="">
+    <img src="welcomeanimation.png" alt="">
     <div class="title">
-        <h1>Connect 1:1</h1>
-        <p>Create your account and find your expert.</p>
+        <h1>Connect. Learn. Grow.</h1>
+        <p>Your private space for 1:1 encounters that transform ideas into results.</p>
     </div>
 
-
-    <form class="styled-form">
-        <app-input icon="mail" type="text" placeholder="Email"></app-input>
-        <app-input icon="lock" type="password" placeholder="Password"></app-input>
-        <app-input icon="account_circle" mode="dropdown" placeholder="Role" [options]="['Advisor', 'User']">
-        </app-input>
-    </form>
-    <p>forgot password?</p>
-
-    <button>Login</button>
+    <button routerLink="/auth/login">Sign In</button>
 
     <div class="divider">
         <span></span>
-        <p>Do you have an account?</p>
+        <p>Don't you have an account?</p>
         <span></span>
     </div>
 
-    <button id="signIn-button" routerLink="/auth/login">Sign In</button>
+    <button id="signIn-button" routerLink="/auth/register">Sign Up</button>
 </div>
