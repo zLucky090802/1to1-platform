@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.safe-area{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    max-width: 80%;
+    
+}
+.title p{
+    text-align: center;
+    color: var(--subtitle-color);
+}
+.styled-form{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin-top: 40px;
+    gap: 20px;
+}
+.styled-form + p {
+    margin: 20px;
+    width: 75vw;
+    text-align: right;
+    color: var(--dark-red);
+}
+button{
+    color: white;
+    background: var(--dark-red);
+    border: none;
+    padding: 10px;
+    width: 80vw;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.signup {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+
+.signup span {
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+@media (max-width: 375px) and (max-height: 667px) {
+
+    .title {
+        margin-top: 8%;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .title p{
+        font-size: 15px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .styled-form {
+        width: 80vw;
+        gap: 15px;
+    }
+
+    .styled-form + p {
+        width: 80vw;
+        font-size: 10px;
+    }
+
+    button {
+        width: 80vw;
+        padding: 8px;
+    }
+
+    .divider {
+        width: 80vw;
+        gap: 5px;
+    }
+}
+
+
+
+@media (min-height: 668px) and (min-width: 376px) and (max-width: 768px) {
+
+    .title {
+        margin-top: 10%;
+        max-width: 80%;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .styled-form {
+        width: 75vw;
+    }
+
+    .styled-form + p {
+        width: 75vw;
+    }
+
+    button {
+        width: 80vw;
+    }
+
+    .divider {
+        width: 75vw;
+    }
+}
+
+
+
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+
+    .title {
+        margin-top: 10%;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .styled-form {
+        width: 50vw;
+        gap: 20px;
+    }
+
+    .styled-form + p {
+        width: 50vw;
+    }
+
+    button {
+        width: 50vw;
+    }
+
+    .divider {
+        width: 50vw;
+    }
+
+    .signup {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,47 @@
+<div class="input-container" (click)="toggleDropdown()">
+
+    @if (icon()) {
+        <span class="material-symbols-outlined icon">
+            {{icon()}}
+        </span>
+    }
+
+    <!-- 🔹 INPUT NORMAL -->
+    @if (mode() === 'text') {
+        <input 
+            [type]="type()" 
+            [placeholder]="placeholder()" 
+            class="styled-input">
+    }
+
+    <!-- 🔹 DROPDOWN -->
+    @if (mode() === 'dropdown') {
+        <div class="styled-input dropdown-display">
+            {{ selected() || placeholder() }}
+        </div>
+    }
+
+    <!-- 🔹 ICON RIGHT -->
+    @if (mode() === 'dropdown') {
+        <span class="material-symbols-outlined icon">
+            expand_more
+        </span>
+    }
+
+    @if (secondIcon() && mode() === 'text') {
+        <span class="material-symbols-outlined icon">
+            {{secondIcon()}}
+        </span>
+    }
+</div>
+
+<!-- 🔽 LISTA -->
+@if (mode() === 'dropdown' && isOpen()) {
+    <div class="dropdown-list">
+        @for (option of options(); track option) {
+            <div class="dropdown-item" (click)="select(option)">
+                {{option}}
+            </div>
+        }
+    </div>
+}

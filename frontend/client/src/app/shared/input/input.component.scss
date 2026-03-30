@@ -1,0 +1,68 @@
+.input-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--medium-grey);
+    border-radius: 15px;
+    padding: 8px 20px;
+    background: white;
+    transition: border 0.3s;
+    color: var(--icon-input);
+    width: 100%;
+}
+
+.input-container:focus-within {
+    border-color: var(--dark-red);
+}
+
+.icon{
+    color: var(--icon-input);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.styled-input {
+    border: none;
+    outline: none;
+  
+    font-size: 16px;
+    color: var(--icon-input);
+}
+:host {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.dropdown-display {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+@media screen and (max-width: 480px) {
+
+    .input-container{
+        padding: 5px 10px;
+    }
+}

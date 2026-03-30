@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif, Helvetica;
+}
+:root{
+    --subtitle-color: #7D7D7D;
+    --medium-grey: #B2B3B0;
+    --dark-red: #473333;
+    --ligth-grey: #F0F3EC;
+    --icon-input: #ACACAC;
+}

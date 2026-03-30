@@ -1,0 +1,28 @@
+
+<div class="safe-area">
+
+    <img src="registeranimation.jpg" alt="">
+    <div class="title">
+        <h1>Connect 1:1</h1>
+        <p>Create your account and find your expert.</p>
+    </div>
+
+
+    <form class="styled-form">
+        <app-input icon="mail" type="text" placeholder="Email"></app-input>
+        <app-input icon="lock" type="password" placeholder="Password"></app-input>
+        <app-input icon="account_circle" mode="dropdown" placeholder="Role" [options]="['Advisor', 'User']">
+        </app-input>
+    </form>
+    <p>forgot password?</p>
+
+    <button>Login</button>
+
+    <div class="divider">
+        <span></span>
+        <p>Do you have an account?</p>
+        <span></span>
+    </div>
+
+    <button id="signIn-button" routerLink="/auth/login">Sign In</button>
+</div>
