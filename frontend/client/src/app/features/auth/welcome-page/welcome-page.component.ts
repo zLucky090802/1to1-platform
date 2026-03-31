@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { InputComponent } from '../../../shared/input/input.component';
+
 import { AuthRoutingModule } from "../auth-routing.module";
+import { InfoCardComponent } from '../../../shared/components/info-card/info-card.component';
+
 
 @Component({
   selector: 'app-welcome-page',
-  imports: [ AuthRoutingModule],
+  imports: [ AuthRoutingModule, InfoCardComponent],
   templateUrl: './welcome-page.component.html',
   styleUrl: './welcome-page.component.scss'
 })

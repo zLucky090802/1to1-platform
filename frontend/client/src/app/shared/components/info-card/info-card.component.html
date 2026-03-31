@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="left-side">
+        <div class="card-icon" [style.background]="iconBg()">
+            {{icon()}}
+        </div>
+    
+        <div class="text">
+            <div class="title">
+                {{title()}}
+            </div>
+            <div class="subtitle">
+                {{subtitle()}}
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="right-side">
+        @if (rightLabel()) {
+            <span class="right-label">{{ rightLabel() }}</span>
+        }
+        @if (badge()) {
+            <span class="badge" [ngClass]="badgeType()">
+                {{ badge() }}
+            </span>
+        }
+        
+      </div>
+   
+</div>

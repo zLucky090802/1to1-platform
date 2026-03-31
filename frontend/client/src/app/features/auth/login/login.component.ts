@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { InputComponent } from '../../../shared/input/input.component';
+
 import { AuthRoutingModule } from "../auth-routing.module";
+import { InputComponent } from '../../../shared/components/input/input.component';
 
 @Component({
   selector: 'app-login',
